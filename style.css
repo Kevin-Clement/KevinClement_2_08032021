@@ -1,0 +1,90 @@
+/* raleway-regular - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/raleway-v19-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('fonts/raleway-v19-latin-regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/raleway-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/raleway-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('fonts/raleway-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/raleway-v19-latin-regular.svg') format('svg'); /* Legacy iOS */
+}
+
+body
+{
+    font-family: 'Raleway';
+    margin: 0;
+}
+
+#main
+{
+    margin : 20px 50px 50px;
+}
+
+h2
+{
+    font-weight: bold;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/************HEADER*************/
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+#logo img
+{
+    width: 80px;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: row;
+}
+
+nav a
+{
+    padding: 40px 30px 0;
+}
+
+nav li
+{
+    margin-right: 5px;
+}
+
+nav li :hover
+{
+    color : #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 35px;
+}
+
+.sign
+{
+    color: #0065FC;
+    font-weight: 700;
+    padding: 40px 40px 0;
+}
+
+/**********SEARCH***********/
