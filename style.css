@@ -39,6 +39,11 @@ a
     color: inherit;
 }
 
+.euro
+{
+    font-weight: bold;
+}
+
 
 /************HEADER*************/
 
@@ -52,8 +57,8 @@ header
 
 #logo img
 {
-    width: 80px;
-    height: 40px;
+    width: 100px;
+    height: 60px;
     padding-bottom: 10px;
 }
 
@@ -73,7 +78,7 @@ nav li
     margin-right: 5px;
 }
 
-nav li :hover
+nav li a:hover
 {
     color : #0065FC;
     border-top: 2px solid #0065FC;
@@ -88,3 +93,63 @@ nav li :hover
 }
 
 /**********SEARCH***********/
+
+.containersearch
+{
+    margin-bottom: 30px;
+
+}
+.containersearch h2
+{
+    margin-bottom: 8px;
+}
+.containersearch p
+{
+    margin-top: 8px;
+}
+.searchbar
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    height: 50px;
+}
+.containermarker
+{
+    display: flex;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px ;
+    width: 50px;
+    flex-shrink: 0;
+}
+.containermarker i
+{
+    margin: auto;
+    font-size: 1.2em;
+}
+.searchinput
+{
+    border: 1px solid #f2f2f2;
+    padding: 0 0 0 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 240px;
+}
+.searchinput::placeholder 
+{
+    color: black;
+}
+
+.searchbutton
+{
+    width: 130px;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.1rem;
+    cursor: pointer;
+    flex-shrink: 0;
+}
