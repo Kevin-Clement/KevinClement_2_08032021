@@ -224,4 +224,117 @@ nav li a:hover
 
 /**********LODGING**********/
 
+.containerhotels
+{
+    display: flex;
+    flex-direction: row;
+    margin:0;
+}
+.containerhotels h3
+{
+    font-weight: bold;
+}
 
+.hotels
+{
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    margin-right: 20px;
+    flex: 1.8;
+}
+.hotels h2
+{
+    align-items: center;
+    margin-left: 38px;
+    margin-top : 40px;
+    font-size: 1.3em;
+}
+.hotel_frame
+{
+    height: 220px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    margin-bottom: 50px;
+    box-shadow: 0 0 7px #c1c1c1;
+}
+.hotel_frame img
+{
+    height : 120px;
+    border-radius: 1rem 1rem 0 0;
+}
+.hotel_description
+{
+    font-size: 0.8em;
+    margin-left: 20px;
+}
+.hotel_rating
+{
+    font-size: 0.8em;
+}
+.blue
+{
+    color: #0065FC;
+}
+.grey
+{
+    color: #c1c1c1
+}
+.row1
+{
+    display: flex;
+    flex-direction: row;
+}
+.row2
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.popular
+{
+    background-color: #f2f2f2;
+    border-radius: 1rem;
+    flex: 1.2;
+}
+.popular_title_icon
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.8em;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.popular_title_icon i
+{
+    font-size: 1.2rem;
+}
+
+.popular_frame
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 7px #c1c1c1;
+}
+.popular_frame img
+{
+    height : 100px;
+    width: 100px;
+    border-radius: 1rem 0 0 1rem;
+}
+.popular_description
+{
+    font-size: 0.8em;
+
+}
+.showmore
+{
+    font-weight: bold;
+    font-size: 1.1em;
+}
