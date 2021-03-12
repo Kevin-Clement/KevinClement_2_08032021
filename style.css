@@ -66,6 +66,7 @@ nav ul
 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 nav a
@@ -160,6 +161,7 @@ nav li a:hover
     margin : 20px 20px 20px 0;
     display : flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 }
 #filters h2
@@ -222,7 +224,7 @@ nav li a:hover
     font-size: 0.9rem;
 }
 
-/**********LODGING**********/
+/**********LODGING**********
 
 .containerhotels
 {
@@ -235,14 +237,13 @@ nav li a:hover
     font-weight: bold;
 }
 
-.hotels
+#hotels
 {
     background-color: #f2f2f2;
     border-radius: 1rem;
-    margin-right: 20px;
-    flex: 1.8;
+    flex: 2;
 }
-.hotels h2
+#hotels h2
 {
     align-items: center;
     margin-left: 38px;
@@ -252,18 +253,20 @@ nav li a:hover
 .hotel_frame
 {
     height: 220px;
-    width: 220px;
+    
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 1rem;
     margin-bottom: 50px;
     box-shadow: 0 0 7px #c1c1c1;
+    width: 200px;
 }
 .hotel_frame img
 {
     height : 120px;
     border-radius: 1rem 1rem 0 0;
+    margin : 3px 3px 0 3px;
 }
 .hotel_description
 {
@@ -286,6 +289,7 @@ nav li a:hover
 {
     display: flex;
     flex-direction: row;
+    
 }
 .row2
 {
@@ -297,7 +301,7 @@ nav li a:hover
 {
     background-color: #f2f2f2;
     border-radius: 1rem;
-    flex: 1.2;
+    margin-left: 15px;
 }
 .popular_title_icon
 {
@@ -317,24 +321,169 @@ nav li a:hover
 {
     display: flex;
     flex-direction: row;
-    text-align: center;
+    justify-content: space-between;
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 0 7px #c1c1c1;
+    
 }
 .popular_frame img
 {
-    height : 100px;
-    width: 100px;
+    height: 194px;
+    width: 200px;
     border-radius: 1rem 0 0 1rem;
+    margin: 3px 0 3px 3px;
+    
 }
 .popular_description
 {
     font-size: 0.8em;
+    
 
 }
 .showmore
 {
     font-weight: bold;
     font-size: 1.1em;
+    margin-left: 40px;
+}
+****/
+
+.containerhotels
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    
+}
+.lodging_title
+{
+    
+    font-size: large;
+    margin: 15px 0 15px 43px;
+    
+}
+.lodgingmarseille 
+{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    border-radius: 1rem;
+    max-width: 850px;
+    padding: 25px 25px 20px 0;
+    margin-top: 5px;
+}
+.containerlodging
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    
+}
+.containerlodging a
+{
+    max-width: 280px;
+}
+.hotel_frame
+{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    width: 236px;
+    max-height: 200px;
+    
+}
+.hotel_frame img
+{
+    object-fit: cover;
+    width: 235px;
+    height: 110px;
+    border-radius: 1rem 1rem 0 0;
+}
+.hotel_description
+{
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 15px;
+    font-size: 0.8em;
+}
+.hotel_name, .euro
+{
+    font-weight: bold;
+}
+.hotel_rating
+{
+    font-size: 0.8em;
+}
+.blue
+{
+    color: #0065FC;
+}
+.grey
+{
+    color: #c1c1c1;
+}
+.showmore
+{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0 0 20px 40px;
+}
+
+.popular_title_icon
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.8em;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.popular_title_icon i
+{
+    font-size: 1.2rem;
+}
+.popular 
+{
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    max-width: 350px;
+    margin-top: 5px;
+}
+.most_popular
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.popular_frame
+{
+    background-color: white;
+    max-width: 300px;
+    max-height: 200px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin-bottom: 30px;
+}
+.popular_frame img
+{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
+}
+.popular_description
+{
+    font-size: 0.8em;
+    margin-left: 10px;
 }
