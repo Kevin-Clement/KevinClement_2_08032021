@@ -97,7 +97,7 @@ nav li a:hover
 
 .containersearch
 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .containersearch h2
 {
@@ -189,13 +189,14 @@ nav li a:hover
     cursor: pointer;
     border-color: #0065FC;
     color: #0065FC;
+    
 }
 .filter i
 {
     position: relative;
     background-color: #DEEBFF;
     border-radius: 50%;
-    padding: 15px;
+    padding: 17px;
     margin: auto;
     color: #0065FC;
 
@@ -375,7 +376,7 @@ nav li a:hover
     border-radius: 1rem;
     max-width: 850px;
     padding: 25px 25px 20px 0;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 .containerlodging
 {
@@ -391,6 +392,8 @@ nav li a:hover
 }
 .hotel_frame
 {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border: 2px solid white;
     border-radius: 1rem;
@@ -398,13 +401,13 @@ nav li a:hover
     margin-bottom: 30px;
     width: 236px;
     max-height: 200px;
-    
+    box-shadow: 5px 5px 7px #c1c1c1;
 }
 .hotel_frame img
 {
     object-fit: cover;
-    width: 235px;
-    height: 110px;
+    max-width: 250px;
+    max-height: 110px;
     border-radius: 1rem 1rem 0 0;
 }
 .hotel_description
@@ -457,7 +460,7 @@ nav li a:hover
     flex-direction: column;
     border-radius: 1rem;
     max-width: 350px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 .most_popular
 {
@@ -474,6 +477,7 @@ nav li a:hover
     border: 2px solid white;
     border-radius: 1rem;
     margin-bottom: 30px;
+    box-shadow: 5px 5px 7px #c1c1c1;
 }
 .popular_frame img
 {
@@ -486,4 +490,93 @@ nav li a:hover
 {
     font-size: 0.8em;
     margin-left: 10px;
+}
+
+/**********ACTIVITY*********/
+
+#activity
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+#activity h2
+{
+    margin-left: 40px;
+}
+.containeractivity
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.containeractivity img
+{
+    width: 270px;
+    border-radius: 1rem 1rem 0 0;
+}
+.column1 img, .column3 img
+{
+    height: 360px;
+    object-fit: cover;
+}
+.column2 img, .column4 img
+{
+    height: 145px;
+    object-fit: cover;
+}
+.column1 a, .column2 a, .column3 a, .column4 a
+{
+    display: flex;
+    max-width: 300px;
+}
+.column2, .column4
+{
+    display: flex;
+    flex-direction: column;
+}
+.activity_frame
+{
+    box-shadow: 0 0 20px #c1c1c1;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.activity_name
+{
+    margin: 10px 0 10px 15px;
+    font-weight: bold;
+}
+
+/***********FOOTER************/
+
+.containerfooter
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.containerfooter li
+{
+    margin-bottom: 10px;
+}
+.containerfooter h3
+{
+    margin-left: 35px;
+}
+.about
+{
+    padding-left: 20px;
+}
+.our_lodging
+{
+    padding-left: 180px;
+}
+.assistance
+{
+    padding-left: 200px;
 }
