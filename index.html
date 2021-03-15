@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer ></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservia - Openclassrooms</title>
+
         
     </head>
 
@@ -17,11 +19,12 @@
                 <img src="images/logo/Reservialogo.png" alt="logo reservia"/>
             </div>
             <nav>
-                <ul>
-                    <li><a href="#hotels">Hébergements</a></li>
-                    <li><a href="#activity">Activités</a></li>
-                    <li><a href="#" class="sign">S'inscrire</a></li>
-                </ul>
+                    
+                        <a class="responsivehotels" href="#hotels">Hébergements</a>
+                        <a href="#activity">Activités</a>
+                    
+                        <a href="#" class="sign">S'inscrire</a>
+                
             </nav>
         </header>
 
@@ -37,26 +40,29 @@
                         </div>
                         <input type="search" class="searchinput" placeholder="Marseille, France"/>
                         <button class="searchbutton">Rechercher</button>
+                        <button class="searchmg"><span><i class="fas fa-search"></i></span></button>
                     </form>
                 
 
                 <div id="filters">
                     <h2>Filtres</h2>
-                    <div class="filter">
-                        <i class="fas fa-money-bill-wave"></i>
-                        <span class="searchfilters">Économique</span>
-                    </div>
-                    <div class="filter">
-                        <i class="fas fa-child"></i>
-                        <span class="searchfilters">Familial</span>
-                    </div>
-                    <div class="filter">
-                        <i class="fas fa-heart"></i>
-                        <span class="searchfilters">Romantique</span>
-                    </div>
-                    <div class="filter">
-                        <i class="fas fa-dog"></i>
-                        <span class="searchfilters">Animaux autorisés</span>
+                    <div class="containerfilters">
+                        <div class="filter">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <span class="searchfilters">Économique</span>
+                        </div>
+                        <div class="filter">
+                            <i class="fas fa-child"></i>
+                            <span class="searchfilters">Familial</span>
+                        </div>
+                        <div class="filter">
+                            <i class="fas fa-heart"></i>
+                            <span class="searchfilters">Romantique</span>
+                        </div>
+                        <div class="filter">
+                            <i class="fas fa-dog"></i>
+                            <span class="searchfilters">Animaux autorisés</span>
+                        </div>
                     </div>
                 </div>
                 <div id="result">

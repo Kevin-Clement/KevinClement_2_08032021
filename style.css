@@ -16,18 +16,19 @@ body
 {
     font-family: 'Raleway';
     margin: 0;
+    padding: 0;
 }
 
 #main
 {
-    margin : 20px 50px 50px;
+    margin : 20px 30px 50px;
+    max-width: 1350px;
 }
 
 h2
 {
     font-weight: bold;
 }
-
 ul
 {
     list-style-type: none;
@@ -61,7 +62,7 @@ header
     height: 53px;
     padding-bottom: 10px;
 }
-
+/*
 nav ul
 {
     display: flex;
@@ -85,7 +86,31 @@ nav li a:hover
     border-top: 2px solid #0065FC;
     padding-top: 35px;
 }
+*/
+nav 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+nav a
+{
+    padding: 40px 30px 0;
+}
+
+nav 
+{
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+nav a:hover
+{
+    color : #0065FC;
+    border-top: 2px solid #0065FC;
+    padding-top: 35px;
+}
 .sign
 {
     color: #0065FC;
@@ -111,8 +136,12 @@ nav li a:hover
 {
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     height: 50px;
+}
+.searchmg
+{
+    display: none;
 }
 .containermarker
 {
@@ -158,7 +187,7 @@ nav li a:hover
 
 #filters
 {
-    margin : 20px 20px 20px 0;
+    margin : 10px 20px 20px 0;
     display : flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -182,15 +211,22 @@ nav li a:hover
     border-radius: 30px / 30px;
     padding-right: 20px;
     margin-left: 25px;
-
+    transition: all .2s ease-in-out;
+    margin-top: 10px;
+}
+.containerfilters
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .filter:hover
 {
     cursor: pointer;
-    border-color: #0065FC;
     color: #0065FC;
-    
+    transform: scale(1.1);
 }
+
 .filter i
 {
     position: relative;
@@ -199,6 +235,8 @@ nav li a:hover
     padding: 17px;
     margin: auto;
     color: #0065FC;
+    margin-inline: -2px;
+    margin-block: -1px;
 
 }
 
@@ -225,130 +263,7 @@ nav li a:hover
     font-size: 0.9rem;
 }
 
-/**********LODGING**********
-
-.containerhotels
-{
-    display: flex;
-    flex-direction: row;
-    margin:0;
-}
-.containerhotels h3
-{
-    font-weight: bold;
-}
-
-#hotels
-{
-    background-color: #f2f2f2;
-    border-radius: 1rem;
-    flex: 2;
-}
-#hotels h2
-{
-    align-items: center;
-    margin-left: 38px;
-    margin-top : 40px;
-    font-size: 1.3em;
-}
-.hotel_frame
-{
-    height: 220px;
-    
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    border-radius: 1rem;
-    margin-bottom: 50px;
-    box-shadow: 0 0 7px #c1c1c1;
-    width: 200px;
-}
-.hotel_frame img
-{
-    height : 120px;
-    border-radius: 1rem 1rem 0 0;
-    margin : 3px 3px 0 3px;
-}
-.hotel_description
-{
-    font-size: 0.8em;
-    margin-left: 20px;
-}
-.hotel_rating
-{
-    font-size: 0.8em;
-}
-.blue
-{
-    color: #0065FC;
-}
-.grey
-{
-    color: #c1c1c1
-}
-.row1
-{
-    display: flex;
-    flex-direction: row;
-    
-}
-.row2
-{
-    display: flex;
-    flex-direction: row;
-}
-
-.popular
-{
-    background-color: #f2f2f2;
-    border-radius: 1rem;
-    margin-left: 15px;
-}
-.popular_title_icon
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 0.8em;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.popular_title_icon i
-{
-    font-size: 1.2rem;
-}
-
-.popular_frame
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    border-radius: 1rem;
-    box-shadow: 0 0 7px #c1c1c1;
-    
-}
-.popular_frame img
-{
-    height: 194px;
-    width: 200px;
-    border-radius: 1rem 0 0 1rem;
-    margin: 3px 0 3px 3px;
-    
-}
-.popular_description
-{
-    font-size: 0.8em;
-    
-
-}
-.showmore
-{
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-left: 40px;
-}
-****/
+/********LODGING*********/
 
 .containerhotels
 {
@@ -357,7 +272,6 @@ nav li a:hover
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 60px;
-    
 }
 .lodging_title
 {
@@ -402,6 +316,11 @@ nav li a:hover
     width: 236px;
     max-height: 200px;
     box-shadow: 5px 5px 7px #c1c1c1;
+    transition: all .2s ease-in-out;
+}
+.hotel_frame:hover
+{
+    transform: scale(1.05);
 }
 .hotel_frame img
 {
@@ -478,6 +397,13 @@ nav li a:hover
     border-radius: 1rem;
     margin-bottom: 30px;
     box-shadow: 5px 5px 7px #c1c1c1;
+    margin-block: 20px;
+    margin-inline: 25px;
+    transition: all .2s ease-in-out;
+}
+.popular_frame:hover
+{
+    transform: scale(1.05);
 }
 .popular_frame img
 {
@@ -510,6 +436,7 @@ nav li a:hover
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 1350px;
 }
 .containeractivity img
 {
@@ -542,6 +469,12 @@ nav li a:hover
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
+    transition: all .2s ease-in-out;
+    max-width: 270px;
+}
+.activity_frame:hover
+{
+    transform: scale(1.05);
 }
 .activity_name
 {
@@ -579,4 +512,183 @@ nav li a:hover
 .assistance
 {
     padding-left: 200px;
+}
+
+/********* MEDIA QUERIES *********/
+@media all and (max-width : 380px)
+{
+    header
+    {
+        align-items: flex-start;
+    }
+    .sign
+    {
+        padding-top: 20px;
+        border-bottom: none;
+    }
+    .responsivehotels
+    {
+        position: absolute;
+        margin-inline-start: -180px;
+    }
+
+    /* Navigation */
+
+    nav 
+    {
+        flex-direction: column-reverse;
+    }
+    nav a:hover
+    {
+    color : #0065FC;
+    border-bottom: 2px solid #0065FC;
+    padding-bottom: 10px;
+    border-top: none;
+    }
+    nav a 
+    {
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 10px;
+    }
+
+    /* SEARCH */
+
+    .searchbutton
+    {
+        display: none;
+    }
+    .searchmg
+    {
+        display: block;
+        width: 50px;
+        background-color: #0065FC;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 1rem;
+        margin-inline: -10px;
+    }
+    .searchinput
+    {
+        width: 220px;
+    }
+
+    /* FILTERS */
+
+    #filters
+    {
+        display: block;
+    }
+    .containerfilters
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .filter
+    {
+        
+    }
+
+    .iconinfo
+    {
+        height:15px;
+    }
+    #result 
+    {
+        font-size: 0.9em;
+    }
+    #result i 
+    {
+        font-size: 0.7em;
+    }
+
+    /* LODGING */
+    .containerhotels 
+    {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    .popular
+    {
+        border-radius: 0px;
+        padding-bottom: 25px;
+    }
+    .popular_frame
+    {
+        margin-block: 7px;
+        margin-inline: 12px;
+    }
+    .popular_description
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .popular_description p 
+    {
+        margin-block-start: -10px;
+        margin-bottom: 35px;
+    }
+    .lodging_title
+    {
+        margin-left: 0;
+    }
+    .lodgingmarseille
+    {
+        background-color: white;
+        padding: 0;
+    }
+    .hotel_frame
+    {
+        margin-inline: 0px;
+        width: 320px;
+        max-height: 170px;
+    }
+    .hotel_frame img
+    {
+        max-width: 320px;
+    }
+    .hotel_description
+    {
+        margin-block: -8px;
+    }
+    .hotel_description p 
+    {
+        margin-block-start: -10px;
+    }
+    .showmore
+    {
+        margin: 0;
+    }
+
+    /* ACTIVITY */
+    #activity h2 
+    {
+        margin: 0 0 15px;
+    }
+    .column1 img, .column3 img
+    {
+        height: 145px;
+    }
+    .activity_frame
+    {
+        margin-inline: 0px;
+        max-width: 320px;
+    }
+    .containeractivity img 
+    {
+        width: 320px;
+    }
+
+    /* FOOTER */
+
+    .containerfooter
+    {
+        flex-direction: column;
+        
+    }
+    .our_lodging, .assistance,.about
+    {
+        padding-left: 0;
+    }
+
 }
