@@ -62,31 +62,7 @@ header
     height: 53px;
     padding-bottom: 10px;
 }
-/*
-nav ul
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-nav a
-{
-    padding: 40px 30px 0;
-}
-
-nav li
-{
-    margin-right: 5px;
-}
-
-nav li a:hover
-{
-    color : #0065FC;
-    border-top: 2px solid #0065FC;
-    padding-top: 35px;
-}
-*/
 nav 
 {
     display: flex;
@@ -219,6 +195,7 @@ nav a:hover
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
 }
 .filter:hover
 {
@@ -226,7 +203,6 @@ nav a:hover
     color: #0065FC;
     transform: scale(1.1);
 }
-
 .filter i
 {
     position: relative;
@@ -515,11 +491,12 @@ nav a:hover
 }
 
 /********* MEDIA QUERIES *********/
-@media all and (max-width : 380px)
+@media all and (max-width : 500px)
 {
     header
     {
         align-items: flex-start;
+        margin-top: 20px;
     }
     .sign
     {
@@ -579,14 +556,17 @@ nav a:hover
     {
         display: block;
     }
+    #filters h2
+    {
+        margin-top: 15px;
+    }
     .containerfilters
     {
-        display: flex;
         flex-direction: column;
     }
     .filter
     {
-        
+        margin: 5px 20px 5px 0;
     }
 
     .iconinfo
@@ -692,3 +672,64 @@ nav a:hover
     }
 
 }
+
+@media all and (min-width : 500px) and (max-width : 770px)
+
+{
+    .filter
+    {
+        padding-right: 10px;
+        margin-left: 15px;
+    }
+    .searchfilters
+    {
+        font-size: 0.9em;
+        padding-left: 5px;
+    }
+    .containerlodging
+    {
+        justify-content: space-around;
+        margin-inline-start: -25px;
+    }
+    .lodgingmarseille
+    {
+        padding-right: 55px;
+    }
+    .hotel_frame
+    {
+        width: 275px;
+    }
+    .hotel_frame img 
+    {
+        max-width: 275px;
+    }
+    .showmore
+    {
+        margin-left: 90px;
+    }
+
+    .assistance
+    {
+        padding-left: 20px;
+    }
+}
+
+@media all and (min-width : 780px) and (max-width : 1024px)
+{
+    .column4
+    {
+        flex-direction: row;
+    }
+    .our_lodging
+    {
+        padding-left: 80px;
+    }
+}
+@media all and (min-width : 1400px)
+{
+    .containerhotels
+    {
+        justify-content: space-around;
+    }
+}
+
