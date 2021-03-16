@@ -21,7 +21,7 @@ body
 
 #main
 {
-    margin : 20px 30px 50px;
+    margin : 0 30px 50px;
     max-width: 1350px;
 }
 
@@ -53,7 +53,6 @@ header
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 40px;
 }
 
 #logo img
@@ -178,7 +177,6 @@ nav a:hover
     font-weight: 700;
     flex-wrap: wrap;
     font-size: 1.1em;
-    margin-bottom: 30px;
     padding-left: 12px;
 }
 .filter
@@ -189,6 +187,9 @@ nav a:hover
     margin-left: 25px;
     transition: all .2s ease-in-out;
     margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 .containerfilters
 {
@@ -205,11 +206,14 @@ nav a:hover
 }
 .filter i
 {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-color: #DEEBFF;
     border-radius: 50%;
     padding: 17px;
-    margin: auto;
+    width: 16px;
     color: #0065FC;
     margin-inline: -2px;
     margin-block: -1px;
@@ -714,7 +718,7 @@ nav a:hover
     }
 }
 
-@media all and (min-width : 780px) and (max-width : 1024px)
+@media all and (min-width : 780px) and (max-width : 1255px)
 {
     .column4
     {
@@ -724,7 +728,46 @@ nav a:hover
     {
         padding-left: 80px;
     }
+    
 }
+
+@media all and (min-width : 770px) and (max-width : 960px)
+{
+    .column4
+    {
+        flex-direction: column;
+    }
+}
+@media all and (min-width : 840px) and (max-width : 1024px)
+{
+    .popular
+    {
+        max-width: 880px;
+    }
+    .most_popular
+    {
+        flex-direction: row;
+    }
+    .popular_frame
+    {
+        font-size: 0.9em;
+        max-height: 200px;
+        width: 240px;
+    }
+    .popular_frame img
+    {
+        height: 140px
+    } 
+    .popular_title_icon
+    {
+        justify-content: flex-start;
+    }
+    .popular_title_icon h2
+    {
+        margin:0 20px 0 30px;
+    }
+}
+
 @media all and (min-width : 1400px)
 {
     .containerhotels
