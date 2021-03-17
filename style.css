@@ -90,8 +90,9 @@ nav a:hover
 {
     color: #0065FC;
     font-weight: 700;
-    padding: 40px 40px 0;
+    padding: 24px 40px 0;
 }
+
 
 /**********SEARCH***********/
 
@@ -360,6 +361,7 @@ nav a:hover
     border-radius: 1rem;
     max-width: 350px;
     margin-top: 15px;
+    margin-right: 10px;
 }
 .most_popular
 {
@@ -396,6 +398,10 @@ nav a:hover
 {
     font-size: 0.8em;
     margin-left: 10px;
+}
+.popular_description p 
+{
+    margin-bottom: 30px;
 }
 
 /**********ACTIVITY*********/
@@ -495,6 +501,7 @@ nav a:hover
 }
 
 /********* MEDIA QUERIES *********/
+
 @media all and (max-width : 500px)
 {
     header
@@ -584,9 +591,11 @@ nav a:hover
     #result i 
     {
         font-size: 0.7em;
+        margin-top: 3px;
     }
 
     /* LODGING */
+
     .containerhotels 
     {
     display: flex;
@@ -645,6 +654,7 @@ nav a:hover
     }
 
     /* ACTIVITY */
+
     #activity h2 
     {
         margin: 0 0 15px;
@@ -756,7 +766,8 @@ nav a:hover
     }
     .popular_frame img
     {
-        height: 140px
+        height: 140px;
+        width: 120px;
     } 
     .popular_title_icon
     {
@@ -766,6 +777,7 @@ nav a:hover
     {
         margin:0 20px 0 30px;
     }
+    
 }
 
 @media all and (min-width : 1400px)
@@ -774,5 +786,26 @@ nav a:hover
     {
         justify-content: space-around;
     }
+    .popular
+    {
+        margin-right: 20px;
+    }
 }
 
+@media all and (min-width : 1500px)
+{
+    body
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .popular
+    {
+        margin-left: 40px;
+    }
+    .containerfooter
+    {
+        width: 1350px;
+    }
+}
